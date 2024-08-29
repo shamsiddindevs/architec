@@ -678,6 +678,9 @@ ol {
 	height: 600px;
 	position: relative;
 	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .project__slider__item:hover .project__slider__item__hover {
@@ -795,7 +798,7 @@ ol {
 
 .modal__slider .set-bg:hover{
 	filter: grayscale(0);
-	transform: scale(1.1);
+	transform: scale(0.9);
 }
 
 /*---------------------
@@ -3175,9 +3178,11 @@ ol {
   .close {
 	color: #aaaaaa;
 	position: absolute;
+	top: 5%;
 	right: 5%;
-	font-size: 28px;
+	font-size: 48px;
 	font-weight: bold;
+	z-index: 100;
   }
   
   .close:hover,
@@ -3193,4 +3198,8 @@ ol {
 @keyframes animatetop {
 	from {opacity: 0}
 	to { opacity: 1}
+  }
+
+.project__item .myBtn {
+	cursor: pointer;
   }
