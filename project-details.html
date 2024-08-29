@@ -227,10 +227,12 @@
                   </div>
                   <div class="col-lg-4 col-md-6">
                       <div class="footer__top__newslatter">
-                          <form action="#">
-                              <input type="text" placeholder="Введите ваш email...">
-                              <button type="submit"><i class="fa fa-send"></i></button>
-                          </form>
+                        <form id="myForm2"
+                        action="javascript:void(0);"
+                        method="post">
+                            <input type="text" placeholder="Введите ваш email..." id="phone" required>
+                            <button type="submit" onclick="sendEmail()"><i class="fa fa-send"></i></button>
+                        </form>
                       </div>
                   </div>
               </div>

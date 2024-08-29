@@ -305,6 +305,7 @@ function sendEmail() {
       subject: "Naqsh form",
       sender: document.getElementById("name").value,
       phone: document.getElementById("email").value,
+      email: document.getElementById("phone").value,
       message: document.getElementById("message").value,
     };
     emailjs.send("service_jcoke8p", "template_lybr56n", params).then(
@@ -314,6 +315,7 @@ function sendEmail() {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
+        document.getElementById("phone").value = "";
       },
       function (error) {
         alert("Email sending failed");
