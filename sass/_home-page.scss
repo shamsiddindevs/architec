@@ -58,6 +58,38 @@
   }
 }
 
+.modal__slider {
+
+  &.owl-carousel {
+
+    .col-lg-3 {
+      max-width: 100%;
+    }
+
+    .owl-nav {
+
+      button {
+        height: 50px;
+        width: 50px;
+        background: $white-color;
+        font-size: 28px;
+        color: $heading-color;
+        position: absolute;
+        left: 35px;
+        top: 50%;
+        margin-top: -25px;
+        line-height: 54px;
+        text-align: center;
+
+        &.owl-next {
+          left: auto;
+          right: 35px;
+        }
+      }
+    }
+  }
+}
+
 .project__slider__item__hover {
   text-align: center;
   background: $white-color;
